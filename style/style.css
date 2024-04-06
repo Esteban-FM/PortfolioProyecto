@@ -57,7 +57,7 @@ html, body {
 }
 
 
-Slider
+/*Slider*/
 
 .slider{
   display: flex;
@@ -98,7 +98,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   display: flex;
  }
  .slider .slide img{
-  width: 180px;
+  width: 140px;
   padding: 10px;
   background-color: #fff;
   cursor: pointer;
@@ -111,8 +111,8 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     transform: translateX(0);
   }
   100%{
-    -webkit-transform: translateX(calc(-240px * 5));
-    transform: translateX(calc(-240px *5));
+    -webkit-transform: translateX(calc(-240px * 10));
+    transform: translateX(calc(-240px *10));
   }
 }
 
