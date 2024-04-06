@@ -63,7 +63,7 @@ html, body {
 
 
 #BotonesV{
-background-image: url(../svg/franja.svg);
+background-color: #000;
 background-repeat: no-repeat;
 background-size: cover;
   display: flex;
