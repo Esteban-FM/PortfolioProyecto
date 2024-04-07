@@ -57,6 +57,59 @@ html, body {
 }
 
 
+/*información*/
+
+#asidenav{
+  float:left;
+  background-color: #ffffff;
+  margin-top: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  border:  1px #737373;
+  box-shadow: 3px 0px 0px #dfdfdf ;
+
+}
+#asidenav h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #e56234 ;
+  text-align:left;
+  padding: 5px;
+  font-family: ;
+
+}
+
+
+#content{
+
+  float: left;
+
+  margin-top: 40px;
+  padding: 20px;
+  margin: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Slider*/
 
 .slider{
@@ -66,13 +119,13 @@ html, body {
   overflow: hidden;
   align-items: center;
 }
-
+/*
 .slider:before {
   position: absolute;
   z-index: 1;
   left: 0;
   content: "";
-  width: 23.958%;
+  width: 23%;
   height: 110px;
 background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 }
@@ -81,11 +134,12 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   position:absolute;
   right:0;
   content: "";
-  width: 23.958%;
+  width: 23%;
   height: 100px;
   background: linear-gradient(90deg,hsla(0, 0%, 96.9%, 0)
    hsla(0, 0%, 96.9%, 0.99)99%);
 }
+*/
 
 .slider .slide-track{
   display: flex;
@@ -98,7 +152,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   display: flex;
  }
  .slider .slide img{
-  width: 140px;
+  width: 190px;
   padding: 10px;
   background-color: #fff;
   cursor: pointer;
@@ -125,7 +179,6 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
 #BotonesV{
-background-color: #000;
 background-repeat: no-repeat;
 background-size: cover;
   display: flex;
@@ -135,6 +188,17 @@ background-size: cover;
   padding-bottom: 0%;
   margin-top: 3%;
 }
+
+   #BotonesV h3 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    margin-top: 5%;
+   }
+
+
+
 .frame-item {
   margin: 10px;
   position: relative;
