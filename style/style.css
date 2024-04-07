@@ -71,7 +71,6 @@ html, body {
 }
 #asidenav h3{
   font-size: 18px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #e56234 ;
   text-align:left;
@@ -84,7 +83,6 @@ html, body {
 #content{
 
   float: left;
-
   margin-top: 40px;
   padding: 20px;
   margin: 10px;
@@ -171,55 +169,31 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 }
 
 
+.frame-hobbie {
+  display: flex;
+  margin: 10px;
+  width: 80px;
+margin-left: -15px;
+}
 
-
+.frame-hobbie img {
+padding-left: 20px;
+}
 
 
 /* Button */
 
 
-#BotonesV{
-background-repeat: no-repeat;
-background-size: cover;
-  display: flex;
-  justify-content: center;
-  background-position: top;
-  align-items: center;
-  padding-bottom: 0%;
-  margin-top: 3%;
-}
 
-   #BotonesV h3 {
-    color: #ffffff;
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 600;
-    margin-top: 5%;
-   }
-
-
+ 
 
 .frame-item {
   margin: 10px;
-  position: relative;
-  width: 8rem;
+  width: 50px;
 }
-    #ButtonCall {
-      cursor: pointer;
-      border: 0;
-      display: flex;
-      /* flex-direction: row; */
-      align-items: center;
-      justify-content: flex-start;
-      padding: var(--padding-mid) 1.44rem;
-      background-color: var(--color-gray);
-      position: relative;
-      /* top: calc(50% - 157px); */
-      left: calc(50% - 50px);
-      /* flex-direction: column; */
-      justify-content: center;
-      gap: 0.28rem;
-    }
+
+
+
     #ButtonWhats{
       cursor: pointer;
       border: 0;
