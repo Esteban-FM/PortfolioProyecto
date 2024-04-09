@@ -83,7 +83,7 @@ margin-left: -15px;
 }
 
 .frame-hobbie img {
-padding-left: 20px;
+padding: 10px;
 }
 
 
@@ -237,10 +237,141 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
 
+/* barra de */
 
 
 
- 
+#extras{
+    box-sizing: border-box;
+    display: flex;
+
+  }
+  .Technical-bars .bar img{
+    width: 55px;
+  }
+
+  .skills{
+    width: 220px;
+    height: 70px;
+    padding: 20px;
+  }
+  
+
+  .bar{
+    font-size: 23px;
+  }
+  .Technical-bars .bar{
+    margin: 40px 0;
+  }
+  .Technical-bars .bar:first-child{
+    margin-top: 0;
+  }
+  .Technical-bars .bar:last-child{
+    margin-bottom: 0;
+  }
+  .Technical-bars h2{
+    margin-bottom: 10px;
+  }
+  .Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+  }
+  .Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #d4d4d4;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  @keyframes animate{
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #231f20;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .progress-line.sketch span{
+    width: 90%;
+  }
+  .progress-line.figma span{
+    width: 60%;
+  }
+  .progress-line.autocad span{
+    width: 70%;
+  }
+  .progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #231f20;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+  }
+  
+  .progress-line.sketch span::after{
+   content: "90%";
+  }
+  .progress-line.figma span::after{
+   content: "60%";
+  }
+  .progress-line.autocad span::after{
+   content: "70%";
+  }
+
+  .progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top:-10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 10;
+  }
+
+  @keyframes showText{
+    100%{
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
