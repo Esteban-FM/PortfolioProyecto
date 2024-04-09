@@ -73,7 +73,7 @@ html, body {
   background-color: #fff ;
   text-align:left;
   padding: 5px;
-  font-family: ;
+
 }
 .frame-hobbie {
   display: flex;
@@ -240,12 +240,21 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 /* barra de */
 
 
+#extras-text{
+  display: flex;
+  justify-content: center;
+}
 
 #extras{
     box-sizing: border-box;
     display: flex;
+    margin-top: 10px;
+    padding: 0px 20px;
 
   }
+
+
+
   .Technical-bars .bar img{
     width: 55px;
   }
