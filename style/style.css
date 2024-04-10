@@ -1,11 +1,47 @@
 
+:root{
+    --negro_opaco:#231f20;
+    --naranja: #d1a04f;
+}
+
+
+
+@font-face {
+  font-family: 'Degular';
+  src: url(/FontDegular/Degular-Bold.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Degular';
+  src: url(/FontDegular/Degular-Semibold.otf);
+  font-weight: semibold;
+  font-style: semibold;
+}
+@font-face {
+  font-family: 'Degular';
+  src: url(/FontDegular/Degular-Medium.otf);
+  font-weight: medium;
+  font-style: medium;
+}
+@font-face {
+  font-family: 'Degular';
+  src: url(/FontDegular/Degular-Regular.otf);
+  font-weight: regular;
+  font-style: regular;
+}
+
+
+
+
+
+
+
 html, body {
-  font-family: 'Urbanist', sans-serif;
   margin: 0px auto;
   width:100%;
   overflow-x:hidden;
   }
-
 
 
 
@@ -22,11 +58,13 @@ html, body {
   justify-content: center;
   background-position: top;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
   margin-top: 3%;
 }
 #portada h1 {
-      color: #000;
+    font-family: 'Degular';
+    font-weight: bold ;
+    color: #000;
     font-size: 50px;  
     line-height: 45px;
     font-weight: 600;
@@ -37,6 +75,8 @@ html, body {
     justify-content: left;
 }    
 #portada p {
+  font-family: 'Degular';
+  font-weight: medium;
   color: #000;
     font-size: 41px;
     line-height: 38px;
@@ -48,7 +88,10 @@ html, body {
     text-align: center;
 }    
 
-
+#portada span{
+  font-family: 'Degular';
+  font-weight: bold;
+}
 
 
 
@@ -61,7 +104,7 @@ html, body {
 
 
 #primer-seccion{
-  background-color: #d1a04f;
+background-color: var(--naranja);
 }
 
 
@@ -76,7 +119,7 @@ html, body {
 
 #asidenav{
   float:left;
-  background-color: #d1a04f;
+  background-color: var(--naranja);
   margin-top: 40px;
   padding: 0px 20px;
   box-sizing: border-box;
@@ -84,8 +127,10 @@ html, body {
   box-shadow: 3px 0px 0px #000 ;
 }
 #asidenav h2{
-  color: #231f20;
-  background-color: #d1a04f ;
+  font-family: 'Degular';
+  font-weight: medium;
+  color: var(--negro_opaco);
+  background-color: var(--naranja);
   text-align:left;
   padding: 5px;
 }
@@ -95,6 +140,7 @@ html, body {
   width: 80px;
 margin-left: -15px;
 }
+
 
 .frame-hobbie img {
 padding: 10px;
@@ -111,8 +157,10 @@ padding: 10px;
   border:  1px #737373;
 }
 #hobbie h2{
+  font-family: 'Degular';
+  font-weight: medium;
   color: #231f20;
-  background-color: #d1a04f ;
+  /* background-color: #d1a04f ; */
   text-align:left;
   padding: 5px;
 }
@@ -133,6 +181,15 @@ padding: 10px;
   margin-top: 40px;
   padding: 20px;
   margin: 10px;
+}
+
+#content h2{
+  font-family: 'Degular';
+  font-weight: medium;
+  color: #231f20;
+  /* background-color: #d1a04f ; */
+  text-align:left;
+  padding: 5px;
 }
 
 .frame-item {
@@ -463,7 +520,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   @media (max-width: 1200px) and (min-width: 1000px) {
 
     #portada {
-      padding-bottom: 20%;
+      padding-bottom: 16%;
     }
     #portada h1 {
     font-size: 50px;  
@@ -551,6 +608,11 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   @media (max-width: 999px) and (min-width: 740px) {
 
 
+
+    #portada {
+      padding-bottom: 15%;
+    }
+
     #portada h1 {
       font-size: 40px;
       line-height: 45px;
@@ -563,10 +625,6 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
       margin-left: 50px;
       margin-top: 29%;
       }
-
-
-
-
 
 
 /*Footer*/
@@ -607,7 +665,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
   }
-  
+
 
 
 
@@ -633,6 +691,9 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
     #grid {
       display: none;
+    }
+    #portada {
+      padding-bottom: 12%;
     }
     #portada h1 {
     font-size: 23px;  
