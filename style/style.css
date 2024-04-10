@@ -329,6 +329,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
 #extras-text{
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -698,7 +699,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     #portada h1 {
     font-size: 23px;  
     line-height: 45px;
-    margin-top: -34px;
+    margin-top: -37px;
     margin-left: 14px;
     }
     #portada p {
@@ -707,6 +708,109 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     margin-left: 16px;
     margin-top: 10%;
     }
+
+
+    #content{
+
+      margin-left: 3%;
+
+    }
+    
+
+
+
+
+
+
+    #hobbie{
+      display: flex;
+      margin-top: 36px;
+      padding: 0px 48px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #hobbie h2{
+      text-align:left;
+      padding: 0;
+      padding-bottom: 19px;
+    }
+
+    .frame-hobbie {
+      margin: -12px;
+      width: 67px;
+    margin-left: -15px;
+    flex-direction: column;
+    }
+    
+    
+    .frame-hobbie img {
+    padding: 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .progress-line span::after{
+      position: absolute;
+      padding: 1px 8px;
+      background-color: #231f20;
+      color: #fff;
+      font-size: 10px;
+      border-radius: 3px;
+      top: 11px;
+      right: -20px;
+      animation: showText 0.5s 1.5s linear forwards;
+      opacity: 0;
+    }
+    
+
+
+    .progress-line span::before{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-color: #000;
+      top: 4px;
+      right: 0;
+      animation: showText 0.5s 1.5s linear forwards;
+      opacity: 10;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
