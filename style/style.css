@@ -68,7 +68,7 @@ html, body {
     font-size: 50px;  
     line-height: 45px;
     font-weight: 600;
-    margin-top: 1px;
+    margin-top: -2px;
     margin-left: 118px;
     display: flex;
     text-align: center;
@@ -140,14 +140,9 @@ background-color: var(--naranja);
   width: 80px;
 margin-left: -15px;
 }
-
-
 .frame-hobbie img {
 padding: 10px;
 }
-
-
-
 #hobbie{
   float:left;
   background-color: #d1a04f;
@@ -321,6 +316,228 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     transform: translateX(calc(-240px *10));
   }
 }
+
+
+/* Skills */
+
+.radial-d{
+  display: flex;
+  justify-content: center;
+  background-position: top;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#skills{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#iconos-productos {
+  display: flex;
+  justify-content: center;
+  background-position: top;
+  align-items: center;
+}
+#iconos-productos img {
+  display: flex;
+  padding-top: 24px;
+  width: 72%;
+  padding-left: 22px;
+}
+#iconos-productos h1 {
+    color: var(--negro_opaco);
+    margin: 30px 137px;
+    font-size: 85px;
+    line-height: 90px;
+    font-weight: 800;
+    padding-top: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#iconos-productos p {
+  color: #222;
+    font-size: 19px;
+    line-height: 38px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+margin-top: -6px;
+}
+
+.radial-bar h2{
+  color: var(--negro_opaco);
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0 19px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* grafica circular */
+
+.radial-bars{
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.radial-bars .radial-bar{
+width: 50%;
+height: 170px;
+margin-bottom: 10px;
+position: relative;
+}
+
+.radial-bars .radial-bar svg{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(-90deg);
+width: 120px;
+height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+stroke-width: 10;
+stroke: #fff;
+fill: transparent;
+stroke-dasharray: 502;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+100%{
+  stroke-dashoffset: -1;
+}
+}
+.path{
+stroke-width: 10;
+stroke: #231f20;
+fill: transparent;
+stroke-dasharray: 502;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+}
+.path2{
+stroke-width: 10;
+stroke: #231f20;
+fill: transparent;
+stroke-dasharray: 400;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+}
+.path3{
+stroke-width: 10;
+stroke: #231f20;
+fill: transparent;
+stroke-dasharray: 480;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+}
+.path4{
+stroke-width: 10;
+stroke: #231f20;
+fill: transparent;
+stroke-dasharray: 360;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+}
+
+
+.path-1{animation: animate-path1 1s 1s linear forwards;
+}
+.path-2{animation: animate-path1 1s 1s linear forwards;
+}
+.path-3{animation: animate-path1 1s 1s linear forwards;
+}
+.path-4{animation: animate-path1 1s 1s linear forwards;
+}
+
+
+@keyframes animate-path1{
+100%{stroke-dashoffset: 50;}
+}
+@keyframes animate-path2{
+100%{stroke-dashoffset: 50;}
+}
+@keyframes animate-path3{
+100%{stroke-dashoffset: 50;}
+}
+@keyframes animate-path4{
+100%{stroke-dashoffset: 50;}
+}
+@keyframes animate-path5{
+100%{stroke-dashoffset: 50;}
+}
+@keyframes animate-path6{
+100%{stroke-dashoffset: 50;}
+}
+
+.radial-bar .porcentage{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) ;
+font-size: 17px;
+font-weight: 500;
+animation: showText 0.5 1s linear forwards;
+/* opacity: 0; */
+}
+
+.progress-bar .text{
+width: 100%;
+position: absolute;
+text-align: center;
+left: 50%;
+bottom: -5px;
+transform:  translateX(-50%);
+font-size: 17px;
+animation: showText 0.5s 1s linear forwards;
+opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -539,6 +756,47 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
 
+    #iconos-productos img {
+      padding-top: 23px;
+      width: 80%;
+      padding-left: 11px;
+    }
+    #iconos-productos h1 {
+      font-size: 60px;
+      line-height: 63px;
+  
+    }
+    #iconos-productos p {
+      font-size: 19px;
+      line-height: 35px;
+      padding-top: 2px;
+    }
+  
+    .radial-bar h2{
+  
+      font-size: 23px;
+
+      font-weight: 800;
+      padding: 0 19px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Footer*/
 
@@ -617,7 +875,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     #portada h1 {
       font-size: 40px;
       line-height: 45px;
-      margin-top: -17px;
+      margin-top: -27px;
       margin-left: 50px;
       }
       #portada p {
@@ -626,6 +884,45 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
       margin-left: 50px;
       margin-top: 29%;
       }
+
+
+
+      #iconos-productos img {
+        padding-top: 12px;
+        width: 73px;
+       margin-left: -13px;
+        }
+        #iconos-productos h1 {
+        font-size: 50px;
+        line-height: 53px;
+        }
+        #iconos-productos p {
+          font-size: 21px;
+          line-height: 20px;
+          padding-top: 15px;
+        }
+      
+        .radial-bar h2{
+          font-size: 19px;
+
+          font-weight: 800;
+          padding: 0 19px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Footer*/
@@ -691,7 +988,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   @media (max-width: 767px) and (min-width: 320px) {
 
     #grid {
-      display: none;
+    
     }
     #portada {
       padding-bottom: 12%;
@@ -699,7 +996,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     #portada h1 {
     font-size: 23px;  
     line-height: 45px;
-    margin-top: -37px;
+    margin-top: -40px;
     margin-left: 14px;
     }
     #portada p {
@@ -711,16 +1008,10 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
     #content{
-
       margin-left: 3%;
 
     }
     
-
-
-
-
-
 
     #hobbie{
       display: flex;
@@ -748,24 +1039,6 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     padding: 0;
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .progress-line span::after{
       position: absolute;
@@ -798,6 +1071,38 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     }
   
 
+    #iconos-productos {
+      background-size: 300%;
+    }
+    
+    #iconos-productos img {
+      width: 68px;
+      padding-left: 21px;
+      padding-top: 15px;
+    }
+    #iconos-productos h1 {
+      font-size: 45px;
+      line-height: 50px;
+      padding-top: 15px;
+    
+    }
+    #iconos-productos p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: -1px;
+        margin: 0 30px 0 30px;
+    }
+    
+    .radial-bar h2{
+
+      font-size: 19px;
+
+      font-weight: 800;
+      padding: 0 19px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
 
 
 
