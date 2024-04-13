@@ -63,7 +63,7 @@ html, body {
 }
 #portada h1 {
     font-family: 'Degular';
-    font-weight: bold ;
+    font-weight: 900 ;
     color: #000;
     font-size: 50px;  
     line-height: 45px;
@@ -128,7 +128,8 @@ background-color: var(--naranja);
 }
 #asidenav h2{
   font-family: 'Degular';
-  font-weight: medium;
+  font-weight: 900;
+  font-size: 32px;
   color: var(--negro_opaco);
   background-color: var(--naranja);
   text-align:left;
@@ -153,7 +154,8 @@ padding: 10px;
 }
 #hobbie h2{
   font-family: 'Degular';
-  font-weight: medium;
+  font-weight: 900;
+  font-size: 32px;
   color: #231f20;
   /* background-color: #d1a04f ; */
   text-align:left;
@@ -180,62 +182,76 @@ padding: 10px;
 
 #content h2{
   font-family: 'Degular';
-  font-weight: medium;
+  font-weight: 900;
+  font-size: 32px ;
   color: #231f20;
   /* background-color: #d1a04f ; */
-  text-align:left;
+  text-align:center;
   padding: 5px;
 }
+
+#content p{
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+
 
 .frame-item {
   margin: 10px;
   width: 50px;
 }
+
+
+#whats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 #ButtonWhats{
   cursor: pointer;
   border: 0;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-mid) 1.44rem;
-  background-color: var(--color-gray);
-  position: relative;
-  /* top: calc(50% - 157px); */
-  left: calc(50% - 50px);
-  /* flex-direction: column; */
   justify-content: center;
   gap: 0.28rem;
+}
+
+#mail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 #ButtonMail{
   cursor: pointer;
   border: 0;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-mid) 1.44rem;
-  background-color: var(--color-gray);
-  position: relative;
-  /* top: calc(50% - 157px); */
-  left: calc(50% - 50px);
-  /* flex-direction: column; */
   justify-content: center;
   gap: 0.28rem;
+}
+
+
+#cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 #ButtonCont{
   cursor: pointer;
   border: 0;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-mid) 1.44rem;
-  background-color: var(--color-gray);
-  position: relative;
-  /* top: calc(50% - 157px); */
-  left: calc(50% - 50px);
-  /* flex-direction: column; */
   justify-content: center;
   gap: 0.28rem;
 }
@@ -349,11 +365,13 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   padding-left: 22px;
 }
 #iconos-productos h1 {
+    font-family: 'Degular';
+    font-weight: 900;
+    font-size: 46px;
     color: var(--negro_opaco);
     margin: 30px 137px;
     font-size: 85px;
     line-height: 90px;
-    font-weight: 800;
     padding-top: 25px;
     display: flex;
     text-align: center;
@@ -371,6 +389,7 @@ margin-top: -6px;
 }
 
 .radial-bar h2{
+  font-size: 46px;
   color: var(--negro_opaco);
   font-size: 28px;
   font-weight: 400;
@@ -397,6 +416,7 @@ margin-top: -6px;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .radial-bars .radial-bar{
@@ -546,6 +566,9 @@ opacity: 0;
 
 
 #extras-text{
+  font-family: 'Degular';
+  font-weight: 900;
+  font-size: 46px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -886,6 +909,12 @@ opacity: 0;
       }
 
 
+      #content{
+      padding: 20px 0px;
+      margin-top: 0px;
+      }
+      
+
 
       #iconos-productos img {
         padding-top: 12px;
@@ -914,7 +943,14 @@ opacity: 0;
 
 
 
+        #hobbie{
+          margin-top: 10px;
+        }
+    
+        #hobbie h2{
 
+        }
+    
 
 
 
@@ -1008,30 +1044,41 @@ opacity: 0;
 
 
     #content{
+      /* display: flex;
+      justify-content: center;
       margin-left: 3%;
-
+      flex-direction: column;
+      align-items: center; */
     }
+
+    #content p{
+      display: flex;
+      justify-content: center;
+    }
+
     
 
     #hobbie{
       display: flex;
-      margin-top: 36px;
-      padding: 0px 48px;
-      flex-direction: column;
+      margin-top: 10px;
+      flex-direction: row;
       align-items: center;
+      padding: 30px 0;
+      padding-left: 15px;
     }
 
     #hobbie h2{
       text-align:left;
       padding: 0;
-      padding-bottom: 19px;
+      margin-right: 25px;
+      padding-bottom: 20px;
     }
 
     .frame-hobbie {
-      margin: -12px;
-      width: 67px;
+    margin: -12px;
+    width: 67px;
     margin-left: -15px;
-    flex-direction: column;
+    flex-direction: row;
     }
     
     
