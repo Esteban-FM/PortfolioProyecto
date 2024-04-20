@@ -100,8 +100,7 @@ html, body {
   font-size: 16px;
 } 
 
-
-.perfil p{
+#perfil p{
   font-family: 'Degular';
   color: #000;
   font-weight: 500;
@@ -113,14 +112,9 @@ html, body {
 }
 
 
-
-
-
-
 #primer-seccion{
 background-color: var(--naranja);
 }
-
 
 
 
