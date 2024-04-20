@@ -193,6 +193,7 @@ padding: 10px;
 #content p{
   margin-left: 10px;
   white-space: nowrap;
+  margin-bottom: 0px;
 }
 
 
@@ -239,13 +240,13 @@ padding: 10px;
 }
 
 
-#cont{
+#github{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
-#ButtonCont{
+#ButtonGit{
   cursor: pointer;
   border: 0;
   display: flex;
@@ -1054,6 +1055,7 @@ opacity: 0;
     #content p{
       display: flex;
       justify-content: center;
+      margin-bottom: 0px;
     }
 
     
