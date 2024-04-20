@@ -93,10 +93,24 @@ html, body {
   font-weight: bold;
 }
 
+ #asidenav li {
+  font-family: 'Degular';
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+} 
 
 
-
-
+.perfil p{
+  font-family: 'Degular';
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  margin-bottom: 70px;
+}
 
 
 
@@ -228,6 +242,14 @@ padding: 10px;
   flex-wrap: nowrap;
   align-items: center;
 }
+
+#mail p{
+  font-family: 'Degular';
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 #ButtonMail{
   cursor: pointer;
   border: 0;
@@ -464,7 +486,14 @@ opacity: 0;
 }
 
 
-
+.perfil{
+  font-family: 'Degular';
+  font-weight: 900;
+  font-size: 46px;
+  margin-top: 43px;
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -799,7 +828,6 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
 
 
   
-
 
 
 
