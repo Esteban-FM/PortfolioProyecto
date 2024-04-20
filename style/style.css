@@ -263,78 +263,6 @@ padding: 10px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*Slider*/
-
-.slider{
-  display: flex;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  align-items: center;
-}
-/*
-.slider:before {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  content: "";
-  width: 23%;
-  height: 110px;
-background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
-}
-
-.slider:after {
-  position:absolute;
-  right:0;
-  content: "";
-  width: 23%;
-  height: 100px;
-  background: linear-gradient(90deg,hsla(0, 0%, 96.9%, 0)
-   hsla(0, 0%, 96.9%, 0.99)99%);
-}
-*/
-
-.slider .slide-track{
-  display: flex;
-  animation: scroll 35s linear infinite;
-  -webkit-animation: scroll 35s linear infinite;
-  width: calc(240px * 10);
-}
-
- .slder .slide{
-  display: flex;
- }
- .slider .slide img{
-  width: 190px;
-  padding: 10px;
-  background-color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  border-radius: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
- }
-@keyframes scroll{
-  0%{
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100%{
-    -webkit-transform: translateX(calc(-240px * 10));
-    transform: translateX(calc(-240px *10));
-  }
-}
-
-
 /* Skills */
 
 .radial-d{
@@ -346,26 +274,25 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
   flex-wrap: wrap;
 }
 
-
 #skills{
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
 }
 
-#iconos-productos {
+#iconosProgramas {
   display: flex;
   justify-content: center;
   background-position: top;
   align-items: center;
 }
-#iconos-productos img {
+#iconosProgramas img {
   display: flex;
   padding-top: 24px;
   width: 72%;
   padding-left: 22px;
 }
-#iconos-productos h1 {
+#iconosProgramas h1 {
     font-family: 'Degular';
     font-weight: 900;
     font-size: 46px;
@@ -378,7 +305,7 @@ background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
     text-align: center;
     justify-content: center;
 }
-#iconos-productos p {
+#iconosProgramas p {
   color: #222;
     font-size: 19px;
     line-height: 38px;
@@ -541,30 +468,7 @@ opacity: 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* barra de */
-
+/* barra de extas*/
 
 #extras-text{
   font-family: 'Degular';
@@ -574,28 +478,20 @@ opacity: 0;
   display: flex;
   justify-content: center;
 }
-
 #extras{
     box-sizing: border-box;
     display: flex;
     margin-top: 10px;
     padding: 0px 20px;
-
   }
-
-
-
   .Technical-bars .bar img{
     width: 55px;
   }
-
   .skills{
     width: 220px;
     height: 70px;
     padding: 20px;
   }
-  
-
   .bar{
     font-size: 23px;
   }
@@ -627,7 +523,6 @@ opacity: 0;
     transform: scaleX(0);
     transform-origin: left;
   }
-  
   @keyframes animate{
     100%{
       transform: scaleX(1);
@@ -696,6 +591,85 @@ opacity: 0;
   }
 
 
+
+
+
+/*Slider*/
+
+.logoslider{
+  font-family: 'Degular';
+  font-weight: 900;
+  font-size: 46px;
+  margin-top: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.slider{
+  display: flex;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* ------------------ */
+.slider:before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  content: "";
+  width: 23%;
+  height: 110px;
+background: linear-gradient(-90deg, hsla(0,0%,96.9%,0));
+}
+
+.slider:after {
+  position:absolute;
+  right:0;
+  content: "";
+  width: 23%;
+  height: 100px;
+  background: linear-gradient(90deg,hsla(0, 0%, 96.9%, 0)
+   hsla(0, 0%, 96.9%, 0.99)99%);
+}
+/* -------------------- */
+
+.slider .slide-track{
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
+  width: calc(240px * 10);
+}
+
+ .slder .slide{
+  display: flex;
+ }
+ .slider .slide img{
+  width: 190px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+ }
+@keyframes scroll{
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(calc(-240px * 10));
+    transform: translateX(calc(-240px *10));
+  }
+}
+
+
+
+
+
+
 /* Footer */
 
 #footer {
@@ -751,12 +725,6 @@ opacity: 0;
 
 
 
-
-
-
-
-
-
   /*ipad landscape*/
   
   @media (max-width: 1200px) and (min-width: 1000px) {
@@ -778,24 +746,21 @@ opacity: 0;
     }    
  
 
-
-
-    #iconos-productos img {
+    #iconosProgramas img {
       padding-top: 23px;
       width: 80%;
       padding-left: 11px;
     }
-    #iconos-productos h1 {
+    #iconosProgramas h1 {
       font-size: 60px;
       line-height: 63px;
   
     }
-    #iconos-productos p {
+    #iconosProgramas p {
       font-size: 19px;
       line-height: 35px;
       padding-top: 2px;
     }
-  
     .radial-bar h2{
   
       font-size: 23px;
@@ -806,20 +771,6 @@ opacity: 0;
       text-align: center;
       justify-content: center;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Footer*/
@@ -842,7 +793,6 @@ opacity: 0;
   }
   
 
-
   }
   
 
@@ -864,33 +814,9 @@ opacity: 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   /*ipad portrait*/
   @media (max-width: 999px) and (min-width: 740px) {
-
-
 
     #portada {
       padding-bottom: 15%;
@@ -909,24 +835,21 @@ opacity: 0;
       margin-top: 29%;
       }
 
-
       #content{
       padding: 20px 0px;
       margin-top: 0px;
       }
       
-
-
-      #iconos-productos img {
+      #iconosProgramas img {
         padding-top: 12px;
         width: 73px;
        margin-left: -13px;
         }
-        #iconos-productos h1 {
+        #iconosProgramas h1 {
         font-size: 50px;
         line-height: 53px;
         }
-        #iconos-productos p {
+        #iconosProgramas p {
           font-size: 21px;
           line-height: 20px;
           padding-top: 15px;
@@ -942,8 +865,6 @@ opacity: 0;
           justify-content: center;
         }
 
-
-
         #hobbie{
           margin-top: 10px;
         }
@@ -951,16 +872,6 @@ opacity: 0;
         #hobbie h2{
 
         }
-    
-
-
-
-
-
-
-
-
-
 
 /*Footer*/
 
@@ -1043,7 +954,6 @@ opacity: 0;
     margin-top: 10%;
     }
 
-
     #content{
       /* display: flex;
       justify-content: center;
@@ -1057,8 +967,6 @@ opacity: 0;
       justify-content: center;
       margin-bottom: 0px;
     }
-
-    
 
     #hobbie{
       display: flex;
@@ -1088,6 +996,17 @@ opacity: 0;
     padding: 0;
     }
     
+    .radial-bar h2{
+
+      font-size: 19px;
+
+      font-weight: 800;
+      padding: 0 19px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
 
     .progress-line span::after{
       position: absolute;
@@ -1102,8 +1021,6 @@ opacity: 0;
       opacity: 0;
     }
     
-
-
     .progress-line span::before{
       content: "";
       position: absolute;
@@ -1118,54 +1035,32 @@ opacity: 0;
       animation: showText 0.5s 1.5s linear forwards;
       opacity: 10;
     }
-  
+    .skills{
+      padding: 10px;
+    }
 
-    #iconos-productos {
+    #iconosProgramas {
       background-size: 300%;
     }
     
-    #iconos-productos img {
+    #iconosProgramas img {
       width: 68px;
       padding-left: 21px;
       padding-top: 15px;
     }
-    #iconos-productos h1 {
+    #iconosProgramas h1 {
       font-size: 45px;
       line-height: 50px;
       padding-top: 15px;
     
     }
-    #iconos-productos p {
+    #iconosProgramas p {
         font-size: 15px;
         line-height: 22px;
         padding-top: -1px;
         margin: 0 30px 0 30px;
     }
     
-    .radial-bar h2{
-
-      font-size: 19px;
-
-      font-weight: 800;
-      padding: 0 19px;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Footer*/
@@ -1176,7 +1071,6 @@ opacity: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 #footer ul {
   display: flex;
